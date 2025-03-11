@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" ></script>
+    <!--fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="./img/user2.png" rel="icon">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Quadro Kanban</h2>
+        <input type="text" id="taskInput" placeholder="Nova tarefa...">
+        <button class="add-btn" onclick="addTask('toDo')">Fazer</button>
+        <button class="add-btn" onclick="addTask('doing')">Fazendo</button>
+        <button class="add-btn" onclick="addTask('done')">Feito</button>
+     <!--tabelaa-->
+        <table>
+            <thead>
+                <tr>
+                    <th>Fazer</th>
+                    <th>Fazendo</th>
+                    <th>Feito</th>
+                </tr>                          
+            </thead>
+            <tbody id="taskTable">
+                <tr>
+                    <td id="toDo"></td>
+                    <td id="doing"></td>
+                    <td id="done"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+    
+</body>
+</html>
